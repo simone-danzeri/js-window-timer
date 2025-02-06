@@ -12,19 +12,32 @@
     <title>Timers</title>
 </head>
 <body>
-    <div class="container ">
-        <div class="timer-container d-flex flex-column align-items-center justify-content-center">
-            <h2 class="title">Timer</h2>
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="title-container d-flex align-items-center justify-content-start">
+                <h1 class="main-title fw-bold mt-4">ChronoKeeper</h1>
+            </div>
+            <div class="description-container d-flex flex-column align-items-end justify-content-end">
+                <p class="main-description fw-light fst-italic">Keep track of your time</p>
+                <small class="powered-by my-3">Powered by <a href="https://piedpiper.com" target="_blank"><img src="" alt="Pied Piper Logo" class="pied-piper-logo"></a></small>
+            </div>
+        </div>
+    </header>
+    <main class="ms-main-colour text-white">
+        <div class="container d-flex flex-column align-items-center justify-content-center ms-height">
+            <div class="timer-container d-flex flex-column align-items-center justify-content-center mb-5">
+                <h2 class="title">Timer</h2>
             <div class="timer-display d-flex align-items-center justify-content-center mt-4">
-            <div class="time fs-2">00:00:00</div>
+                <div class="time fs-2">00:00:00</div>
+            </div>
+            <div class="buttons d-flex gap-4 mt-4">
+                <button class="start btn btn-primary" onclick="startTimer()">Start</button>
+                <button class="stop btn btn-danger" onclick="stopTimer()">Stop</button>
+                <button class="reset btn btn-secondary" onclick="resetTimer()">Reset</button>
+            </div>
         </div>
-        <div class="buttons d-flex gap-4 mt-4">
-            <button class="start btn btn-primary" onclick="startTimer()">Start</button>
-            <button class="stop btn btn-danger" onclick="stopTimer()">Stop</button>
-            <button class="reset btn btn-secondary" onclick="resetTimer()">Reset</button>
-        </div>
-        <h2 class="title mt-5">Countdown</h2>
         <div class="countdown-container d-flex flex-column align-items-center justify-content-center">
+            <h2 class="title mt-5">Countdown</h2>
             <div class="countdown-display d-flex align-items-center justify-content-center mt-4">
                 <div class="countdown fs-2">20:00</div>
             </div>

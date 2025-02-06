@@ -3,3 +3,9 @@
     font-weight: bold;
     text-align: center;
 }
+.ms-height {
+    height: 90vh;
+}
+.ms-main-colour {
+    background-color: #005C4A;
+}
